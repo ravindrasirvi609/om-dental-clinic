@@ -557,6 +557,80 @@ export default function Home() {
           </div>
         </div>
       </section>
+
+      {/* Footer */}
+
+      <footer className="bg-blue-900 backdrop-blur-md text-white py-10">
+        <div className="container mx-auto px-4">
+          <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
+            <div>
+              <div className="flex items-center space-x-2 mb-4">
+                <div className="w-8 h-8 rounded-full bg-white flex items-center justify-center text-blue-800 font-bold text-sm">
+                  Om
+                </div>
+                <h3 className="font-bold text-lg">Om Dental Clinic</h3>
+              </div>
+              <p className="text-blue-200 text-sm mb-4">
+                Your trusted partner for comprehensive dental care and a
+                beautiful, healthy smile.
+              </p>
+              <div className="flex space-x-4">
+                <a
+                  href="#"
+                  className="text-white hover:text-blue-200 transition"
+                >
+                  <svg
+                    className="w-5 h-5"
+                    fill="currentColor"
+                    viewBox="0 0 24 24"
+                    aria-hidden="true"
+                  >
+                    <path
+                      fillRule="evenodd"
+                      d="M22 12c0-5.523-4.477-10-10-10S2 6.477 2 12c0 4.991 3.657 9.128 8.438 9.878v-6.987h-2.54V12h2.54V9.797c0-2.506 1.492-3.89 3.777-3.89 1.094 0 2.238.195 2.238.195v2.46h-1.26c-1.243 0-1.63.771-1.63 1.562V12h2.773l-.443 2.89h-2.33v6.988C18.343 21.128 22 16.991 22 12z"
+                      clipRule="evenodd"
+                    ></path>
+                  </svg>
+                </a>
+                <a
+                  href="#"
+                  className="text-white hover:text-blue-200 transition"
+                >
+                  <svg
+                    className="w-5 h-5"
+                    fill="currentColor"
+                    viewBox="0 0 24 24"
+                    aria-hidden="true"
+                  >
+                    <path
+                      fillRule="evenodd"
+                      d="M12 2C6.486 2 2 6.486 2 12c0 4.998 3.657 9.136 8.438 9.887v-6.987H7.9V12h2.538V9.797c0-2.506 1.492-3.89 3.777-3.89 1.094 0 2.238.195 2.238.195v2.46h-1.26c-1.243 0-1.63.771-1.63 1.562V12h2.773l-.443 2.89h-2.33v6.988C18.343 21.136 22 16.998 22 12c0-5.514-4.486-10-10-10z"
+                      clipRule="evenodd"
+                    ></path>
+                  </svg>
+                </a>
+                <a
+                  href="#"
+                  className="text-white hover:text-blue-200 transition"
+                >
+                  <svg
+                    className="w-5 h-5"
+                    fill="currentColor"
+                    viewBox="0 0 24 24"
+                    aria-hidden="true"
+                  >
+                    <path
+                      fillRule="evenodd"
+                      d="M22 2H2a2 2 0 00-2 2v16a2 2 0 002 2h20a2 2 0 002-2V4a2 2 0 00-2-2zM9 18H5v-6h4v6zm-2-8a2 2 0 110-4 2 2 0 010 4zm12 8h-4v-6h4v6zm-2-8a2 2 0 110-4 2 2 0 010 4zm-6-2a2 2 0 100-4 2 2 0 000 4z"
+                      clipRule="evenodd"
+                    ></path>
+                  </svg>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>{" "}
+      </footer>
     </div>
   );
 }
