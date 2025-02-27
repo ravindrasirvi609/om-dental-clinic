@@ -3,6 +3,7 @@ import Hero from "./components/hero";
 import Service from "./components/service";
 import Testimonial from "./components/testimonial";
 import Contact from "./components/contact";
+import WhyChooseUs from "./components/whychooseus";
 
 export default function Home() {
   return (
@@ -13,6 +14,8 @@ export default function Home() {
       {/* Services Section */}
       <Service />
 
+      {/* Why choose us */}
+      <WhyChooseUs />
       {/* Testimonials Section */}
       <Testimonial />
 
