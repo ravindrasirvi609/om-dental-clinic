@@ -33,7 +33,7 @@ const Header = () => {
               Home
             </a>
             <a
-              href="#"
+              href="/about"
               className="text-blue-900 hover:text-blue-700 font-medium"
             >
               About Us
@@ -51,7 +51,7 @@ const Header = () => {
               Testimonials
             </a>
             <a
-              href="#"
+              href="/contact"
               className="text-blue-900 hover:text-blue-700 font-medium"
             >
               Contact
@@ -88,7 +88,7 @@ const Header = () => {
                 Home
               </a>
               <a
-                href="#"
+                href="/about"
                 className="text-blue-900 hover:text-blue-700 font-medium py-2"
               >
                 About Us
@@ -106,7 +106,7 @@ const Header = () => {
                 Testimonials
               </a>
               <a
-                href="#"
+                href="/contact"
                 className="text-blue-900 hover:text-blue-700 font-medium py-2"
               >
                 Contact
