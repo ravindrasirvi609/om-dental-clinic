@@ -1,5 +1,6 @@
 "use client";
 import { Calendar, Menu, X } from "lucide-react";
+import Link from "next/link";
 import React, { useState } from "react";
 
 const Header = () => {
@@ -26,36 +27,36 @@ const Header = () => {
 
           {/* Desktop Navigation */}
           <nav className="hidden md:flex space-x-6">
-            <a
-              href="#"
+            <Link
+              href=""
               className="text-blue-900 hover:text-blue-700 font-medium"
             >
               Home
-            </a>
-            <a
+            </Link>
+            <Link
               href="/about"
               className="text-blue-900 hover:text-blue-700 font-medium"
             >
               About Us
-            </a>
-            <a
+            </Link>
+            <Link
               href="#"
               className="text-blue-900 hover:text-blue-700 font-medium"
             >
               Services
-            </a>
-            <a
+            </Link>
+            <Link
               href="#"
               className="text-blue-900 hover:text-blue-700 font-medium"
             >
               Testimonials
-            </a>
-            <a
+            </Link>
+            <Link
               href="/contact"
               className="text-blue-900 hover:text-blue-700 font-medium"
             >
               Contact
-            </a>
+            </Link>
           </nav>
 
           {/* Book Appointment Button */}
@@ -81,36 +82,36 @@ const Header = () => {
         <div className="md:hidden backdrop-blur-lg bg-white/80 border-b border-white/20 shadow-md">
           <div className="container mx-auto px-4 py-4">
             <nav className="flex flex-col space-y-4">
-              <a
-                href="#"
+              <Link
+                href="/"
                 className="text-blue-900 hover:text-blue-700 font-medium py-2"
               >
                 Home
-              </a>
-              <a
+              </Link>
+              <Link
                 href="/about"
                 className="text-blue-900 hover:text-blue-700 font-medium py-2"
               >
                 About Us
-              </a>
-              <a
+              </Link>
+              <Link
                 href="#"
                 className="text-blue-900 hover:text-blue-700 font-medium py-2"
               >
                 Services
-              </a>
-              <a
+              </Link>
+              <Link
                 href="#"
                 className="text-blue-900 hover:text-blue-700 font-medium py-2"
               >
                 Testimonials
-              </a>
-              <a
+              </Link>
+              <Link
                 href="/contact"
                 className="text-blue-900 hover:text-blue-700 font-medium py-2"
               >
                 Contact
-              </a>
+              </Link>
               <button className="flex items-center space-x-2 px-4 py-2 bg-blue-600 hover:bg-blue-700 text-white rounded-full backdrop-blur-sm bg-opacity-90 shadow-md transition duration-300 w-full justify-center mt-2">
                 <Calendar size={16} />
                 <span>Book Appointment</span>
