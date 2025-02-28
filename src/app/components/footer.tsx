@@ -205,9 +205,7 @@ const Footer = () => {
                   className="text-blue-600 mr-2 mt-1 flex-shrink-0"
                 />
                 <div className="text-blue-800">
-                  <p>Mon-Fri: 8:00 AM - 6:00 PM</p>
-                  <p>Saturday: 9:00 AM - 3:00 PM</p>
-                  <p>Sunday: Closed</p>
+                  <p>Mon-Sun: 9:00 AM - 9:00 PM</p>
                 </div>
               </li>
             </ul>
