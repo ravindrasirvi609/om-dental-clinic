@@ -1,245 +1,251 @@
+"use client";
 import React from "react";
+import Link from "next/link";
 import {
-  MapPin,
-  Phone,
-  Mail,
-  Calendar,
   Facebook,
   Instagram,
   Twitter,
-  Linkedin,
+  MapPin,
+  Phone,
+  Mail,
+  Clock,
 } from "lucide-react";
-import Image from "next/image";
 
 const Footer = () => {
+  const currentYear = new Date().getFullYear();
+
   return (
-    <footer className="bg-gradient-to-b from-blue-50 to-blue-100 pt-12 pb-6">
+    <footer className="bg-gradient-to-b from-white to-blue-50 pt-12 pb-6">
       <div className="container mx-auto px-4">
-        {/* Footer Top Section */}
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 mb-12">
-          {/* Column 1: About */}
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 mb-8">
+          {/* About Section */}
           <div>
-            <h3 className="text-xl font-bold text-blue-900 mb-4">
-              Om Dental Clinic
-            </h3>
-            <div className="mb-4">
-              <Image
-                src="/om-clinic.jpg"
-                alt="Om Dental Clinic Logo"
-                width={120}
-                height={60}
-                className="rounded-lg"
-              />
+            <div className="flex items-center space-x-2 mb-4">
+              <div className="w-10 h-10 rounded-full bg-blue-500 flex items-center justify-center text-white font-bold text-xl">
+                Om
+              </div>
+              <div>
+                <h3 className="text-blue-800 font-bold text-lg">
+                  Om Dental Clinic
+                </h3>
+                <p className="text-blue-600 text-xs">
+                  Your smile is our priority
+                </p>
+              </div>
             </div>
-            <p className="text-blue-800 mb-4">
-              Providing quality dental care to Pune and Hinjawadi area since
-              2010. Your smile is our priority.
+            <p className="text-blue-700 mb-4">
+              Providing exceptional dental care with a gentle touch. Our
+              state-of-the-art clinic offers comprehensive dental services for
+              the whole family.
             </p>
-            <div className="flex space-x-3">
+            <div className="flex space-x-4">
               <a
-                href="#"
-                className="w-9 h-9 rounded-full bg-blue-600 hover:bg-blue-700 flex items-center justify-center text-white transition duration-300"
+                href="https://facebook.com"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="bg-white/70 backdrop-blur-md p-2 rounded-full shadow-sm border border-white/20 text-blue-600 hover:text-blue-800 transition-colors"
               >
                 <Facebook size={18} />
               </a>
               <a
-                href="#"
-                className="w-9 h-9 rounded-full bg-blue-600 hover:bg-blue-700 flex items-center justify-center text-white transition duration-300"
+                href="https://instagram.com"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="bg-white/70 backdrop-blur-md p-2 rounded-full shadow-sm border border-white/20 text-blue-600 hover:text-blue-800 transition-colors"
               >
                 <Instagram size={18} />
               </a>
               <a
-                href="#"
-                className="w-9 h-9 rounded-full bg-blue-600 hover:bg-blue-700 flex items-center justify-center text-white transition duration-300"
+                href="https://twitter.com"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="bg-white/70 backdrop-blur-md p-2 rounded-full shadow-sm border border-white/20 text-blue-600 hover:text-blue-800 transition-colors"
               >
                 <Twitter size={18} />
-              </a>
-              <a
-                href="#"
-                className="w-9 h-9 rounded-full bg-blue-600 hover:bg-blue-700 flex items-center justify-center text-white transition duration-300"
-              >
-                <Linkedin size={18} />
               </a>
             </div>
           </div>
 
-          {/* Column 2: Quick Links */}
+          {/* Services Section */}
           <div>
-            <h3 className="text-xl font-bold text-blue-900 mb-4">
-              Quick Links
-            </h3>
-            <ul className="space-y-2">
-              <li>
-                <a
-                  href="#"
-                  className="text-blue-800 hover:text-blue-600 transition duration-300 flex items-center"
-                >
-                  <span className="mr-2">›</span> Home
-                </a>
-              </li>
-              <li>
-                <a
-                  href="#"
-                  className="text-blue-800 hover:text-blue-600 transition duration-300 flex items-center"
-                >
-                  <span className="mr-2">›</span> About Us
-                </a>
-              </li>
-              <li>
-                <a
-                  href="#"
-                  className="text-blue-800 hover:text-blue-600 transition duration-300 flex items-center"
-                >
-                  <span className="mr-2">›</span> Services
-                </a>
-              </li>
-              <li>
-                <a
-                  href="#"
-                  className="text-blue-800 hover:text-blue-600 transition duration-300 flex items-center"
-                >
-                  <span className="mr-2">›</span> Our Doctors
-                </a>
-              </li>
-              <li>
-                <a
-                  href="#"
-                  className="text-blue-800 hover:text-blue-600 transition duration-300 flex items-center"
-                >
-                  <span className="mr-2">›</span> Blog
-                </a>
-              </li>
-              <li>
-                <a
-                  href="#"
-                  className="text-blue-800 hover:text-blue-600 transition duration-300 flex items-center"
-                >
-                  <span className="mr-2">›</span> Contact
-                </a>
-              </li>
-            </ul>
-          </div>
-
-          {/* Column 3: Services */}
-          <div>
-            <h3 className="text-xl font-bold text-blue-900 mb-4">
+            <h3 className="text-blue-800 font-semibold text-lg mb-4">
               Our Services
             </h3>
             <ul className="space-y-2">
               <li>
-                <a
-                  href="#"
-                  className="text-blue-800 hover:text-blue-600 transition duration-300 flex items-center"
+                <Link
+                  href="/services#general-dentistry"
+                  className="text-blue-700 hover:text-blue-900 transition-colors"
                 >
-                  <span className="mr-2">›</span> General Dentistry
-                </a>
+                  General Dentistry
+                </Link>
               </li>
               <li>
-                <a
-                  href="#"
-                  className="text-blue-800 hover:text-blue-600 transition duration-300 flex items-center"
+                <Link
+                  href="/services#cosmetic-dentistry"
+                  className="text-blue-700 hover:text-blue-900 transition-colors"
                 >
-                  <span className="mr-2">›</span> Cosmetic Dentistry
-                </a>
+                  Cosmetic Dentistry
+                </Link>
               </li>
               <li>
-                <a
-                  href="#"
-                  className="text-blue-800 hover:text-blue-600 transition duration-300 flex items-center"
+                <Link
+                  href="/services#orthodontics"
+                  className="text-blue-700 hover:text-blue-900 transition-colors"
                 >
-                  <span className="mr-2">›</span> Orthodontics
-                </a>
+                  Orthodontics
+                </Link>
               </li>
               <li>
-                <a
-                  href="#"
-                  className="text-blue-800 hover:text-blue-600 transition duration-300 flex items-center"
+                <Link
+                  href="/services#oral-surgery"
+                  className="text-blue-700 hover:text-blue-900 transition-colors"
                 >
-                  <span className="mr-2">›</span> Oral Surgery
-                </a>
+                  Oral Surgery
+                </Link>
               </li>
               <li>
-                <a
-                  href="#"
-                  className="text-blue-800 hover:text-blue-600 transition duration-300 flex items-center"
+                <Link
+                  href="/services#pediatric-dentistry"
+                  className="text-blue-700 hover:text-blue-900 transition-colors"
                 >
-                  <span className="mr-2">›</span> Pediatric Dentistry
-                </a>
+                  Pediatric Dentistry
+                </Link>
               </li>
               <li>
-                <a
-                  href="#"
-                  className="text-blue-800 hover:text-blue-600 transition duration-300 flex items-center"
+                <Link
+                  href="/services#emergency-care"
+                  className="text-blue-700 hover:text-blue-900 transition-colors"
                 >
-                  <span className="mr-2">›</span> Dental Implants
-                </a>
+                  Emergency Dental Care
+                </Link>
               </li>
             </ul>
           </div>
 
-          {/* Column 4: Contact Info */}
+          {/* Quick Links Section */}
           <div>
-            <h3 className="text-xl font-bold text-blue-900 mb-4">Contact Us</h3>
+            <h3 className="text-blue-800 font-semibold text-lg mb-4">
+              Quick Links
+            </h3>
+            <ul className="space-y-2">
+              <li>
+                <Link
+                  href="/"
+                  className="text-blue-700 hover:text-blue-900 transition-colors"
+                >
+                  Home
+                </Link>
+              </li>
+              <li>
+                <Link
+                  href="/about"
+                  className="text-blue-700 hover:text-blue-900 transition-colors"
+                >
+                  About Us
+                </Link>
+              </li>
+              <li>
+                <Link
+                  href="/services"
+                  className="text-blue-700 hover:text-blue-900 transition-colors"
+                >
+                  Services
+                </Link>
+              </li>
+              <li>
+                <Link
+                  href="/testimonials"
+                  className="text-blue-700 hover:text-blue-900 transition-colors"
+                >
+                  Testimonials
+                </Link>
+              </li>
+              <li>
+                <Link
+                  href="/contact"
+                  className="text-blue-700 hover:text-blue-900 transition-colors"
+                >
+                  Contact
+                </Link>
+              </li>
+              <li>
+                <Link
+                  href="/sitemap"
+                  className="text-blue-700 hover:text-blue-900 transition-colors"
+                >
+                  Sitemap
+                </Link>
+              </li>
+            </ul>
+          </div>
+
+          {/* Contact Section */}
+          <div>
+            <h3 className="text-blue-800 font-semibold text-lg mb-4">
+              Contact Us
+            </h3>
             <ul className="space-y-3">
-              <li className="flex items-start">
-                <MapPin
-                  size={18}
-                  className="text-blue-600 mr-2 mt-1 flex-shrink-0"
-                />
-                <span className="text-blue-800">
-                  Shop no.10, Om Complex Hinjawadi Phase 1 Road, Shivaji chowk,
-                  opposite Union Bank, Hinjawadi, Pune, Maharashtra 411057
+              <li className="flex items-start space-x-3">
+                <MapPin className="w-5 h-5 text-blue-600 flex-shrink-0 mt-0.5" />
+                <span className="text-blue-700">
+                  123 Dental Plaza, Baner Road, Pune, Maharashtra 411045
                 </span>
               </li>
-              <li className="flex items-center">
-                <Phone size={18} className="text-blue-600 mr-2 flex-shrink-0" />
-                <span className="text-blue-800">096996 14430</span>
+              <li className="flex items-center space-x-3">
+                <Phone className="w-5 h-5 text-blue-600 flex-shrink-0" />
+                <a
+                  href="tel:+919699614430"
+                  className="text-blue-700 hover:text-blue-900 transition-colors"
+                >
+                  +91 96996 14430
+                </a>
               </li>
-              <li className="flex items-center">
-                <Mail size={18} className="text-blue-600 mr-2 flex-shrink-0" />
-                <span className="text-blue-800">info@omdentalclinic.com</span>
+              <li className="flex items-center space-x-3">
+                <Mail className="w-5 h-5 text-blue-600 flex-shrink-0" />
+                <a
+                  href="mailto:info@omdentalclinic.com"
+                  className="text-blue-700 hover:text-blue-900 transition-colors"
+                >
+                  info@omdentalclinic.com
+                </a>
               </li>
-              <li className="flex items-start">
-                <Calendar
-                  size={18}
-                  className="text-blue-600 mr-2 mt-1 flex-shrink-0"
-                />
-                <div className="text-blue-800">
-                  <p>Mon-Sun: 9:00 AM - 9:00 PM</p>
+              <li className="flex items-start space-x-3">
+                <Clock className="w-5 h-5 text-blue-600 flex-shrink-0 mt-0.5" />
+                <div className="text-blue-700">
+                  <div>Mon-Sat: 9:00 AM - 8:00 PM</div>
+                  <div>Sunday: 10:00 AM - 2:00 PM</div>
                 </div>
               </li>
             </ul>
           </div>
         </div>
 
-        {/* Footer Bottom / Copyright */}
-        <div className="pt-6 border-t border-blue-200">
+        {/* Legal Links */}
+        <div className="border-t border-blue-100 pt-6 mt-6">
           <div className="flex flex-col md:flex-row justify-between items-center">
-            <p className="text-blue-800 text-center md:text-left mb-4 md:mb-0">
-              © {new Date().getFullYear()} Om Dental Clinic. All Rights
-              Reserved.
+            <p className="text-blue-700 text-sm mb-4 md:mb-0">
+              © {currentYear} Om Dental Clinic. All rights reserved.
             </p>
-            <div className="flex flex-wrap justify-center gap-4">
-              <a
-                href="#"
-                className="text-blue-800 hover:text-blue-600 transition duration-300"
+            <div className="flex flex-wrap justify-center space-x-4">
+              <Link
+                href="/privacy-policy"
+                className="text-blue-700 hover:text-blue-900 text-sm transition-colors"
               >
                 Privacy Policy
-              </a>
-              <span className="text-blue-300">|</span>
-              <a
-                href="#"
-                className="text-blue-800 hover:text-blue-600 transition duration-300"
+              </Link>
+              <Link
+                href="/terms-of-service"
+                className="text-blue-700 hover:text-blue-900 text-sm transition-colors"
               >
                 Terms of Service
-              </a>
-              <span className="text-blue-300">|</span>
-              <a
-                href="#"
-                className="text-blue-800 hover:text-blue-600 transition duration-300"
+              </Link>
+              <Link
+                href="/sitemap"
+                className="text-blue-700 hover:text-blue-900 text-sm transition-colors"
               >
                 Sitemap
-              </a>
+              </Link>
             </div>
           </div>
         </div>

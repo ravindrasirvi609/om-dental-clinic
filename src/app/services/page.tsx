@@ -15,7 +15,8 @@ import {
 
 const services = [
   {
-    icon: <Smile className="w-8 h-8 text-blue-600" />,
+    id: "general-dentistry",
+    icon: <Stethoscope className="w-8 h-8 text-blue-600" />,
     title: "General Dentistry",
     description:
       "Comprehensive dental care including cleanings, fillings, and preventive treatments.",
@@ -27,6 +28,7 @@ const services = [
     ],
   },
   {
+    id: "cosmetic-dentistry",
     icon: <Crown className="w-8 h-8 text-blue-600" />,
     title: "Cosmetic Dentistry",
     description:
@@ -39,6 +41,7 @@ const services = [
     ],
   },
   {
+    id: "oral-surgery",
     icon: <Bone className="w-8 h-8 text-blue-600" />,
     title: "Oral Surgery",
     description: "Expert surgical procedures for complex dental issues.",
@@ -50,6 +53,7 @@ const services = [
     ],
   },
   {
+    id: "pediatric-dentistry",
     icon: <Baby className="w-8 h-8 text-blue-600" />,
     title: "Pediatric Dentistry",
     description:
@@ -62,6 +66,7 @@ const services = [
     ],
   },
   {
+    id: "orthodontics",
     icon: <Smile className="w-8 h-8 text-blue-600" />,
     title: "Orthodontics",
     description: "Straighten your teeth and achieve the perfect smile.",
@@ -73,6 +78,7 @@ const services = [
     ],
   },
   {
+    id: "emergency-care",
     icon: <Stethoscope className="w-8 h-8 text-blue-600" />,
     title: "Emergency Dental Care",
     description: "Immediate care for dental emergencies and pain relief.",
@@ -86,19 +92,21 @@ const services = [
 ];
 
 interface Service {
+  id: string;
   icon: React.ReactNode;
   title: string;
   description: string;
   treatments: string[];
 }
 
-const ServiceCard = ({ service }: { service: Service }) => {
+const ServiceCard: React.FC<{ service: Service }> = ({ service }) => {
   return (
     <motion.div
+      id={service.id}
       initial={{ opacity: 0, y: 20 }}
       whileInView={{ opacity: 1, y: 0 }}
       transition={{ duration: 0.5 }}
-      className="bg-white/70 backdrop-blur-md p-6 rounded-lg shadow-lg border border-white/20 hover:shadow-xl transition-all duration-300"
+      className="bg-white/70 backdrop-blur-md p-6 rounded-lg shadow-lg border border-white/20 hover:shadow-xl transition-all duration-300 scroll-mt-24"
     >
       <div className="flex items-center mb-4">
         {service.icon}
