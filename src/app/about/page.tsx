@@ -81,7 +81,7 @@ const AboutUs = () => {
             </div>
             <div>
               <Image
-                src="/clinic-interior.jpg"
+                src="/om-clinic.jpg"
                 alt="Om Dental Clinic Interior"
                 width={600}
                 height={400}
