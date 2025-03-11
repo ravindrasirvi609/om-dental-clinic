@@ -187,39 +187,39 @@ const AboutUs = () => {
             <div className="backdrop-blur-md bg-white/30 p-6 rounded-2xl border border-white/20 shadow-lg text-center">
               <Image
                 src="/team-member1.jpg"
-                alt="Dr. Jane Doe"
+                alt="Dr. Priya Sharma"
                 width={128}
                 height={128}
                 className="w-32 h-32 rounded-full mx-auto mb-4"
               />
               <h3 className="text-xl font-semibold text-blue-900 mb-2">
-                Dr. Jane Doe
+                Dr. Priya Sharma
               </h3>
               <p className="text-blue-800">Orthodontist</p>
             </div>
             <div className="backdrop-blur-md bg-white/30 p-6 rounded-2xl border border-white/20 shadow-lg text-center">
               <Image
                 src="/team-member2.jpg"
-                alt="Dr. John Smith"
+                alt="Dr. Rajesh Patel"
                 width={128}
                 height={128}
                 className="w-32 h-32 rounded-full mx-auto mb-4"
               />
               <h3 className="text-xl font-semibold text-blue-900 mb-2">
-                Dr. John Smith
+                Dr. Rajesh Patel
               </h3>
               <p className="text-blue-800">Cosmetic Dentist</p>
             </div>
             <div className="backdrop-blur-md bg-white/30 p-6 rounded-2xl border border-white/20 shadow-lg text-center">
               <Image
                 src="/team-member3.jpg"
-                alt="Sarah Lee"
+                alt="Anjali Desai"
                 width={128}
                 height={128}
                 className="w-32 h-32 rounded-full mx-auto mb-4"
               />
               <h3 className="text-xl font-semibold text-blue-900 mb-2">
-                Sarah Lee
+                Anjali Desai
               </h3>
               <p className="text-blue-800">Dental Hygienist</p>
             </div>

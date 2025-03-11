@@ -2,6 +2,7 @@
 import React, { useEffect, useRef } from "react";
 import { Calendar, ChevronRight } from "lucide-react";
 import { gsap } from "gsap";
+import Link from "next/link";
 
 const Hero = () => {
   const headlineRef = useRef<HTMLDivElement>(null);
@@ -64,14 +65,22 @@ const Hero = () => {
               ref={buttonsRef}
               className="flex flex-col sm:flex-row justify-center space-y-4 sm:space-y-0 sm:space-x-6"
             >
-              <button className="px-8 py-4 rounded-full bg-blue-600 hover:bg-blue-800 text-white font-semibold transition-transform duration-300 hover:scale-105 flex items-center justify-center">
+              <button
+                onClick={() =>
+                  window.open("https://wa.me/919699614430", "_blank")
+                }
+                className="px-8 py-4 rounded-full bg-blue-600 hover:bg-blue-800 text-white font-semibold transition-transform duration-300 hover:scale-105 flex items-center justify-center"
+              >
                 <Calendar size={20} className="mr-2" />
                 Book Appointment
               </button>
-              <button className="px-8 py-4 rounded-full backdrop-blur-md bg-transparent border-2 border-white/50 text-white font-semibold transition-all duration-300 hover:bg-white/20 flex items-center justify-center">
+              <Link
+                href="/services"
+                className="px-8 py-4 rounded-full backdrop-blur-md bg-transparent border-2 border-white/50 text-white font-semibold transition-all duration-300 hover:bg-white/20 flex items-center justify-center"
+              >
                 Explore Services
                 <ChevronRight size={20} className="ml-2" />
-              </button>
+              </Link>
             </div>
             {/* Added Stats */}
             <div className="mt-12 flex justify-center space-x-8 text-white">

@@ -20,7 +20,10 @@ const CTABanner: React.FC = () => {
           </p>
         </div>
         <div className="flex flex-col md:flex-row items-center p-6">
-          <button className="bg-blue-600 hover:bg-blue-700 text-white font-bold py-3 px-8 rounded-full transition-colors duration-300 flex items-center">
+          <button
+            className="bg-blue-600 hover:bg-blue-700 text-white font-bold py-3 px-8 rounded-full transition-colors duration-300 flex items-center"
+            onClick={() => window.open("https://wa.me/919699614430", "_blank")}
+          >
             <svg
               className="h-5 w-5 mr-2"
               fill="none"

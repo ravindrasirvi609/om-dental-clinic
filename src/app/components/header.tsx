@@ -28,7 +28,7 @@ const Header = () => {
           {/* Desktop Navigation */}
           <nav className="hidden md:flex space-x-6">
             <Link
-              href=""
+              href="/"
               className="text-blue-900 hover:text-blue-700 font-medium"
             >
               Home
@@ -40,13 +40,13 @@ const Header = () => {
               About Us
             </Link>
             <Link
-              href="#"
+              href="/services"
               className="text-blue-900 hover:text-blue-700 font-medium"
             >
               Services
             </Link>
             <Link
-              href="#"
+              href="/testimonials"
               className="text-blue-900 hover:text-blue-700 font-medium"
             >
               Testimonials
@@ -61,7 +61,12 @@ const Header = () => {
 
           {/* Book Appointment Button */}
           <div className="hidden md:block">
-            <button className="flex items-center space-x-2 px-4 py-2 bg-blue-600 hover:bg-blue-700 text-white rounded-full backdrop-blur-sm bg-opacity-90 shadow-md transition duration-300">
+            <button
+              className="flex items-center space-x-2 px-4 py-2 bg-blue-600 hover:bg-blue-700 text-white rounded-full backdrop-blur-sm bg-opacity-90 shadow-md transition duration-300"
+              onClick={() =>
+                window.open("https://wa.me/919699614430", "_blank")
+              }
+            >
               <Calendar size={16} />
               <span>Book Appointment</span>
             </button>
@@ -95,13 +100,13 @@ const Header = () => {
                 About Us
               </Link>
               <Link
-                href="#"
+                href="/services"
                 className="text-blue-900 hover:text-blue-700 font-medium py-2"
               >
                 Services
               </Link>
               <Link
-                href="#"
+                href="/testimonials"
                 className="text-blue-900 hover:text-blue-700 font-medium py-2"
               >
                 Testimonials
@@ -112,7 +117,12 @@ const Header = () => {
               >
                 Contact
               </Link>
-              <button className="flex items-center space-x-2 px-4 py-2 bg-blue-600 hover:bg-blue-700 text-white rounded-full backdrop-blur-sm bg-opacity-90 shadow-md transition duration-300 w-full justify-center mt-2">
+              <button
+                className="flex items-center space-x-2 px-4 py-2 bg-blue-600 hover:bg-blue-700 text-white rounded-full backdrop-blur-sm bg-opacity-90 shadow-md transition duration-300 w-full justify-center mt-2"
+                onClick={() =>
+                  window.open("https://wa.me/919699614430", "_blank")
+                }
+              >
                 <Calendar size={16} />
                 <span>Book Appointment</span>
               </button>

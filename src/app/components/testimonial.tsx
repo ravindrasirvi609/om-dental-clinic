@@ -2,6 +2,7 @@
 import React, { useEffect, useRef } from "react";
 import { gsap } from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
+import Link from "next/link";
 
 interface Testimonial {
   initial: string;
@@ -132,9 +133,12 @@ const Testimonial: React.FC = () => {
           ))}
         </div>
         <div className="text-center mt-8">
-          <button className="px-6 py-2 bg-blue-600 hover:bg-blue-700 text-white rounded-full transition duration-300">
+          <Link
+            href="/testimonials"
+            className="px-6 py-2 bg-blue-600 hover:bg-blue-700 text-white rounded-full transition duration-300"
+          >
             See More Reviews
-          </button>
+          </Link>
         </div>
       </div>
     </section>
