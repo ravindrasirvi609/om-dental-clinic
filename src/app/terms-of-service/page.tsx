@@ -36,9 +36,9 @@ const TermsOfServicePage = () => {
               </p>
               <p className="mt-2">
                 By accessing this website, we assume you accept these terms and
-                conditions in full. Do not continue to use Om Dental Clinic's
-                website if you do not accept all of the terms and conditions
-                stated on this page.
+                conditions in full. Do not continue to use Om Dental
+                Clinic&apos;s website if you do not accept all of the terms and
+                conditions stated on this page.
               </p>
             </section>
 
@@ -71,8 +71,8 @@ const TermsOfServicePage = () => {
               </p>
               <p className="mt-2">
                 If you need to cancel or reschedule an appointment, please
-                provide at least 24 hours' notice. Failure to do so may result
-                in a cancellation fee.
+                provide at least 24 hours&apos; notice. Failure to do so may
+                result in a cancellation fee.
               </p>
             </section>
 
