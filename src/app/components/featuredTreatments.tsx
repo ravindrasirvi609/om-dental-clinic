@@ -157,7 +157,7 @@ const FeaturedTreatments = () => {
               className="relative h-64 md:h-80 rounded-xl overflow-hidden"
             >
               <Image
-                src="/images/consultation.jpg"
+                src="/om-clinic.jpg"
                 alt="Dental consultation"
                 fill
                 className="object-cover"
