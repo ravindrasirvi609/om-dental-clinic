@@ -80,7 +80,7 @@ const Header = () => {
               </button>
               {isTreatmentsOpen && (
                 <div
-                  className="absolute left-0 mt-2 w-64 bg-white rounded-md shadow-lg py-2 z-10"
+                  className="absolute left-0 w-64 bg-white rounded-md shadow-lg py-1 z-10"
                   onMouseEnter={() => setIsTreatmentsOpen(true)}
                   onMouseLeave={() => setIsTreatmentsOpen(false)}
                 >
@@ -88,7 +88,7 @@ const Header = () => {
                     <Link
                       key={index}
                       href={link.href}
-                      className="block px-4 py-2 text-blue-800 hover:bg-blue-50 hover:text-blue-600"
+                      className="block px-4 py-1 text-blue-800 hover:bg-blue-50 hover:text-blue-600"
                     >
                       {link.name}
                     </Link>
