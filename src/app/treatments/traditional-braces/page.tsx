@@ -120,7 +120,7 @@ export default function TraditionalBracesPage() {
         </h2>
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
           <div className="space-y-4">
-            <h3 className="text-xl font-bold text-blue-700">Do's:</h3>
+            <h3 className="text-xl font-bold text-blue-700">Do&apos;s:</h3>
             <ul className="space-y-2">
               <li className="flex items-start gap-2">
                 <CheckCircle2 className="w-5 h-5 text-green-600 flex-shrink-0 mt-1" />
@@ -141,7 +141,7 @@ export default function TraditionalBracesPage() {
             </ul>
           </div>
           <div className="space-y-4">
-            <h3 className="text-xl font-bold text-blue-700">Don'ts:</h3>
+            <h3 className="text-xl font-bold text-blue-700">Don&apos;ts:</h3>
             <ul className="space-y-2">
               <li className="flex items-start gap-2">
                 <CheckCircle2 className="w-5 h-5 text-red-600 flex-shrink-0 mt-1" />
