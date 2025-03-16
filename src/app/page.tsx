@@ -4,6 +4,9 @@ import Service from "./components/service";
 import Testimonial from "./components/testimonial";
 import WhyChooseUs from "./components/whychooseus";
 import CTABanner from "./components/CTABanner";
+import Gallery from "./components/gallery";
+import FeaturedTreatments from "./components/featuredTreatments";
+import Statistics from "./components/statistics";
 import { Metadata } from "next";
 import { generateMetadata } from "./components/SEO";
 
@@ -26,12 +29,26 @@ export default function Home() {
     <div>
       {/* Hero Section */}
       <Hero />
+
       {/* Services Section */}
       <Service />
+
+      {/* Featured Treatments Section */}
+      <FeaturedTreatments />
+
+      {/* Gallery Section */}
+      <Gallery />
+
+      {/* Statistics Section */}
+      <Statistics />
+
       {/* Why choose us */}
       <WhyChooseUs />
+
       {/* Testimonials Section */}
       <Testimonial />
+
+      {/* Call to Action Banner */}
       <CTABanner />
     </div>
   );

@@ -1,10 +1,24 @@
 "use client";
-import { Calendar, Menu, X } from "lucide-react";
+import { Calendar, Menu, X, ChevronDown } from "lucide-react";
 import Link from "next/link";
 import React, { useState } from "react";
 
 const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
+  const [isTreatmentsOpen, setIsTreatmentsOpen] = useState(false);
+
+  const treatmentLinks = [
+    { name: "Invisalign", href: "/treatments/invisalign" },
+    { name: "Traditional Braces", href: "/treatments/traditional-braces" },
+    { name: "Root Canal", href: "/treatments/root-canal" },
+    { name: "Dental Implant", href: "/treatments/dental-implant" },
+    { name: "Dentures", href: "/treatments/dentures" },
+    {
+      name: "Wisdom Teeth Extraction",
+      href: "/treatments/wisdom-teeth-extraction",
+    },
+    { name: "Dental Crown & Bridges", href: "/treatments/crown-and-bridges" },
+  ];
 
   return (
     <header className="sticky top-0 z-50">
@@ -45,6 +59,35 @@ const Header = () => {
             >
               Services
             </Link>
+            {/* Treatments Dropdown */}
+            <div className="relative group">
+              <button
+                className="flex items-center text-blue-900 hover:text-blue-700 font-medium"
+                onClick={() => setIsTreatmentsOpen(!isTreatmentsOpen)}
+                onMouseEnter={() => setIsTreatmentsOpen(true)}
+                onMouseLeave={() => setIsTreatmentsOpen(false)}
+              >
+                Treatments
+                <ChevronDown size={16} className="ml-1" />
+              </button>
+              {isTreatmentsOpen && (
+                <div
+                  className="absolute left-0 mt-2 w-64 bg-white rounded-md shadow-lg py-2 z-10"
+                  onMouseEnter={() => setIsTreatmentsOpen(true)}
+                  onMouseLeave={() => setIsTreatmentsOpen(false)}
+                >
+                  {treatmentLinks.map((link, index) => (
+                    <Link
+                      key={index}
+                      href={link.href}
+                      className="block px-4 py-2 text-blue-800 hover:bg-blue-50 hover:text-blue-600"
+                    >
+                      {link.name}
+                    </Link>
+                  ))}
+                </div>
+              )}
+            </div>
             <Link
               href="/testimonials"
               className="text-blue-900 hover:text-blue-700 font-medium"
@@ -105,6 +148,34 @@ const Header = () => {
               >
                 Services
               </Link>
+              {/* Mobile Treatments Dropdown */}
+              <div>
+                <button
+                  className="flex items-center text-blue-900 hover:text-blue-700 font-medium py-2 w-full justify-between"
+                  onClick={() => setIsTreatmentsOpen(!isTreatmentsOpen)}
+                >
+                  <span>Treatments</span>
+                  <ChevronDown
+                    size={16}
+                    className={`transition-transform ${
+                      isTreatmentsOpen ? "rotate-180" : ""
+                    }`}
+                  />
+                </button>
+                {isTreatmentsOpen && (
+                  <div className="pl-4 mt-2 space-y-2 border-l-2 border-blue-100">
+                    {treatmentLinks.map((link, index) => (
+                      <Link
+                        key={index}
+                        href={link.href}
+                        className="block py-2 text-blue-800 hover:text-blue-600"
+                      >
+                        {link.name}
+                      </Link>
+                    ))}
+                  </div>
+                )}
+              </div>
               <Link
                 href="/testimonials"
                 className="text-blue-900 hover:text-blue-700 font-medium py-2"

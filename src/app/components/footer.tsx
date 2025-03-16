@@ -123,6 +123,71 @@ const Footer = () => {
             </ul>
           </div>
 
+          {/* Treatments Section */}
+          <div>
+            <h3 className="text-blue-800 font-semibold text-lg mb-4">
+              Treatments
+            </h3>
+            <ul className="space-y-2">
+              <li>
+                <Link
+                  href="/treatments/invisalign"
+                  className="text-blue-700 hover:text-blue-900 transition-colors"
+                >
+                  Invisalign
+                </Link>
+              </li>
+              <li>
+                <Link
+                  href="/treatments/traditional-braces"
+                  className="text-blue-700 hover:text-blue-900 transition-colors"
+                >
+                  Traditional Braces
+                </Link>
+              </li>
+              <li>
+                <Link
+                  href="/treatments/root-canal"
+                  className="text-blue-700 hover:text-blue-900 transition-colors"
+                >
+                  Root Canal
+                </Link>
+              </li>
+              <li>
+                <Link
+                  href="/treatments/dental-implant"
+                  className="text-blue-700 hover:text-blue-900 transition-colors"
+                >
+                  Dental Implant
+                </Link>
+              </li>
+              <li>
+                <Link
+                  href="/treatments/dentures"
+                  className="text-blue-700 hover:text-blue-900 transition-colors"
+                >
+                  Dentures
+                </Link>
+              </li>
+              <li>
+                <Link
+                  href="/treatments/wisdom-teeth-extraction"
+                  className="text-blue-700 hover:text-blue-900 transition-colors"
+                >
+                  Wisdom Teeth Extraction
+                </Link>
+              </li>
+              <li>
+                <Link
+                  href="/treatments/crown-and-bridges"
+                  className="text-blue-700 hover:text-blue-900 transition-colors"
+                >
+                  Crown & Bridges
+                </Link>
+              </li>
+            </ul>
+          </div>
+
           {/* Quick Links Section */}
           <div>
             <h3 className="text-blue-800 font-semibold text-lg mb-4">
