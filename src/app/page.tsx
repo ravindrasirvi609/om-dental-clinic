@@ -4,11 +4,11 @@ import Service from "./components/service";
 import Testimonial from "./components/testimonial";
 import WhyChooseUs from "./components/whychooseus";
 import CTABanner from "./components/CTABanner";
-import Gallery from "./components/gallery";
-import FeaturedTreatments from "./components/featuredTreatments";
-import Statistics from "./components/statistics";
 import { Metadata } from "next";
 import { generateMetadata } from "./components/SEO";
+import FeaturedTreatments from "./components/featuredTreatments";
+import Gallery from "./components/gallery";
+import Statistics from "./components/statistics";
 
 export const metadata: Metadata = generateMetadata({
   title: "Om Dental Clinic | Best Dental Care in Hinjawadi, Pune",

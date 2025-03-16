@@ -1,30 +1,10 @@
 "use client";
-import React, { useEffect, useRef } from "react";
-import gsap from "gsap";
-import { ScrollTrigger } from "gsap/ScrollTrigger";
+import React, { useRef } from "react";
 import { Smile, Sparkles, LineChart, Scissors } from "lucide-react";
 
 const Service = () => {
   const sectionRef = useRef(null);
   const cardsRef = useRef(null);
-
-  useEffect(() => {
-    gsap.registerPlugin(ScrollTrigger);
-    const cards = cardsRef.current as unknown as HTMLElement;
-    gsap.fromTo(
-      cards,
-      { y: 30, opacity: 0, scale: 0.95 },
-      {
-        y: 0,
-        opacity: 1,
-        scale: 1,
-        duration: 0.5,
-        stagger: 0.2,
-        ease: "power2.out",
-        scrollTrigger: { trigger: sectionRef.current, start: "top 70%" },
-      }
-    );
-  }, []);
 
   return (
     <section
