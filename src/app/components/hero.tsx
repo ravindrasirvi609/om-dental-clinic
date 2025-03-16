@@ -391,42 +391,6 @@ const Hero = () => {
         </div>
       </div>
 
-      {/* Wave separator */}
-      <div
-        ref={waveRef}
-        className="absolute bottom-0 left-0 w-full overflow-hidden z-0"
-      >
-        <svg
-          xmlns="http://www.w3.org/2000/svg"
-          viewBox="0 0 1440 120"
-          className="text-blue-50 w-full h-auto"
-          preserveAspectRatio="none"
-        >
-          <path
-            d="M0,96L60,80C120,64,240,32,360,32C480,32,600,64,720,80C840,96,960,96,1080,80C1200,64,1320,32,1380,16L1440,0L1440,320L1380,320C1320,320,1200,320,1080,320C960,320,840,320,720,320C600,320,480,320,360,320C240,320,120,320,60,320L0,320Z"
-            fill="currentColor"
-          ></path>
-        </svg>
-      </div>
-
-      {/* Add a subtle animated scroll indicator */}
-      <div className="absolute bottom-6 left-1/2 transform -translate-x-1/2 flex flex-col items-center text-gray-500 animate-bounce opacity-75 z-20">
-        <span className="text-xs font-medium mb-1">Scroll Down</span>
-        <svg
-          className="w-5 h-5"
-          fill="none"
-          stroke="currentColor"
-          viewBox="0 0 24 24"
-        >
-          <path
-            strokeLinecap="round"
-            strokeLinejoin="round"
-            strokeWidth={2}
-            d="M19 14l-7 7m0 0l-7-7m7 7V3"
-          />
-        </svg>
-      </div>
-
       {/* Floating appointment prompt */}
       {showAppointmentPrompt && (
         <div
