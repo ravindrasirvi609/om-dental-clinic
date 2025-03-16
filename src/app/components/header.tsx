@@ -1,5 +1,6 @@
 "use client";
 import { Calendar, Menu, X, ChevronDown } from "lucide-react";
+import Image from "next/image";
 import Link from "next/link";
 import React, { useState } from "react";
 
@@ -26,9 +27,16 @@ const Header = () => {
         <div className="container mx-auto px-4 py-4 flex items-center justify-between">
           {/* Logo */}
           <div className="flex items-center space-x-2">
-            <div className="w-10 h-10 rounded-full bg-blue-500 flex items-center justify-center text-white font-bold text-xl">
+            {/* <div className="w-10 h-10 rounded-full bg-blue-500 flex items-center justify-center text-white font-bold text-xl">
               Om
-            </div>
+            </div> */}
+            <Image
+              src="/images/logo.png"
+              alt="Om Dental Clinic Logo"
+              className="w-10 h-10"
+              width={50}
+              height={50}
+            />
             <div>
               <h1 className="text-blue-800 font-bold text-lg md:text-xl">
                 Om Dental Clinic
