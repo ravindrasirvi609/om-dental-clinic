@@ -1,6 +1,7 @@
 "use client";
 import React, { useState } from "react";
 import { Mail, MapPin, Phone, Clock, Check } from "lucide-react";
+import Link from "next/link";
 
 const Contact = () => {
   const [formSubmitted, setFormSubmitted] = useState(false);
@@ -87,12 +88,12 @@ const Contact = () => {
                       Phone Number
                     </h3>
                     <p className="text-blue-800 text-lg">
-                      <a
+                      <Link
                         href="tel:+919699614430"
                         className="hover:text-blue-600 transition-colors"
                       >
                         +91 96996 14430
-                      </a>
+                      </Link>
                     </p>
                   </div>
                 </div>
@@ -284,7 +285,7 @@ const Contact = () => {
                         value={formData.phone}
                         onChange={handleChange}
                         className="w-full px-4 py-3 rounded-lg bg-blue-50 border border-blue-100 focus:border-blue-500 focus:ring-2 focus:ring-blue-200 outline-none transition"
-                        placeholder="+91 98765 43210"
+                        placeholder="+91 81071 99052"
                       />
                     </div>
                     <div>

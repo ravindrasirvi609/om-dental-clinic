@@ -132,7 +132,7 @@ const Contact = () => {
                     type="tel"
                     id="phone"
                     className="w-full px-4 py-2 rounded-lg backdrop-blur-sm bg-white/80 border border-blue-100 focus:border-blue-600 focus:ring focus:ring-blue-200 focus:ring-opacity-50 outline-none transition"
-                    placeholder="(555) 123-4567"
+                    placeholder="8107199052"
                   />
                 </div>
                 <div>

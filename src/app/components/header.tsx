@@ -26,10 +26,11 @@ const Header = () => {
       <div className="backdrop-blur-md bg-white/70 border-b border-white/20 shadow-sm">
         <div className="container mx-auto px-4 py-4 flex items-center justify-between">
           {/* Logo */}
-          <div className="flex items-center space-x-2">
-            {/* <div className="w-10 h-10 rounded-full bg-blue-500 flex items-center justify-center text-white font-bold text-xl">
+
+          {/* <div className="w-10 h-10 rounded-full bg-blue-500 flex items-center justify-center text-white font-bold text-xl">
               Om
             </div> */}
+          <Link href="/" className="flex items-center space-x-2">
             <Image
               src="/images/logo.png"
               alt="Om Dental Clinic Logo"
@@ -45,7 +46,7 @@ const Header = () => {
                 Your smile is our priority
               </p>
             </div>
-          </div>
+          </Link>
 
           {/* Desktop Navigation */}
           <nav className="hidden md:flex space-x-6">
