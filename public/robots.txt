@@ -1,0 +1,14 @@
+# *
+User-agent: *
+Allow: /
+Disallow: /api
+Disallow: /admin
+Disallow: /_next
+Disallow: /static
+
+# Host
+Host: https://omdental.clinic
+
+# Sitemaps
+Sitemap: https://omdental.clinic/sitemap.xml
+Sitemap: https://omdental.clinic/server-sitemap.xml
