@@ -80,7 +80,7 @@ export default function DentalImplantPage() {
           step={5}
           title="Abutment & Crown Placement"
           description="Once healing is complete, we'll attach an abutment to the implant and take impressions for your custom crown. The final crown is designed to match your natural teeth in color, shape, and size, completing your smile restoration."
-          image="/images/treatments/dental-implant/crown-placement.jpg"
+          image="/images/treatments/dental-implant/consultation.jpg"
           imageAlt="Abutment and crown placement"
         />
       </div>

@@ -46,7 +46,7 @@ export default function TraditionalBracesPage() {
           step={1}
           title="Initial Consultation & Assessment"
           description="We'll examine your teeth, take X-rays, and discuss your orthodontic needs. This helps us understand the complexity of your case and determine if traditional braces are the best option for you."
-          image="/images/treatments/braces/consultation.jpg"
+          image="/images/treatments/traditional-braces/consultation.jpg"
           imageAlt="Dental consultation for traditional braces"
         />
 
@@ -54,7 +54,7 @@ export default function TraditionalBracesPage() {
           step={2}
           title="Treatment Planning"
           description="Based on your examination, we'll create a detailed treatment plan. We'll explain the expected duration, process, and show you examples of similar cases we've treated successfully."
-          image="/images/treatments/braces/planning.jpg"
+          image="/images/treatments/traditional-braces/planning.jpg"
           imageAlt="Treatment planning for braces"
           isReversed
         />
@@ -63,7 +63,7 @@ export default function TraditionalBracesPage() {
           step={3}
           title="Braces Installation"
           description="We'll clean and prepare your teeth, then carefully place the brackets and wires. The process is painless and typically takes 1-2 hours. We'll also provide detailed care instructions."
-          image="/images/treatments/braces/installation.jpg"
+          image="/images/treatments/traditional-braces/installation.jpg"
           imageAlt="Braces installation process"
         />
 
@@ -71,7 +71,7 @@ export default function TraditionalBracesPage() {
           step={4}
           title="Regular Adjustments"
           description="You'll visit us every 4-6 weeks for adjustments. During these visits, we'll change the wires or elastic bands, check your progress, and make necessary modifications to your treatment."
-          image="/images/treatments/braces/adjustment.jpg"
+          image="/images/treatments/traditional-braces/adjustment.jpg"
           imageAlt="Regular braces adjustment"
           isReversed
         />
@@ -80,7 +80,7 @@ export default function TraditionalBracesPage() {
           step={5}
           title="Braces Removal & Retention"
           description="Once your teeth are properly aligned, we'll remove your braces and provide you with retainers. Wearing retainers as directed is crucial for maintaining your new smile."
-          image="/images/treatments/braces/completion.jpg"
+          image="/images/treatments/traditional-braces/consultation.jpg"
           imageAlt="Braces removal and final results"
         />
       </div>
@@ -121,7 +121,7 @@ export default function TraditionalBracesPage() {
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
           <div className="space-y-4">
             <h3 className="text-xl font-bold text-blue-700">Do&apos;s:</h3>
-            <ul className="space-y-2">
+            <ul className="space-y-2 text-blue-500">
               <li className="flex items-start gap-2">
                 <CheckCircle2 className="w-5 h-5 text-green-600 flex-shrink-0 mt-1" />
                 <span>Brush after every meal</span>
@@ -142,7 +142,7 @@ export default function TraditionalBracesPage() {
           </div>
           <div className="space-y-4">
             <h3 className="text-xl font-bold text-blue-700">Don&apos;ts:</h3>
-            <ul className="space-y-2">
+            <ul className="space-y-2 text-blue-500">
               <li className="flex items-start gap-2">
                 <CheckCircle2 className="w-5 h-5 text-red-600 flex-shrink-0 mt-1" />
                 <span>Eat sticky or hard foods</span>

@@ -72,7 +72,7 @@ export default function CrownAndBridgesPage() {
               <h3 className="text-xl font-bold text-blue-700">
                 When You Need a Crown:
               </h3>
-              <ul className="space-y-2">
+              <ul className="space-y-2 text-blue-500">
                 <li className="flex items-start gap-2">
                   <CheckCircle2 className="w-5 h-5 text-blue-600 flex-shrink-0 mt-1" />
                   <span>To protect a weak tooth from breaking</span>
@@ -109,7 +109,7 @@ export default function CrownAndBridgesPage() {
               <h3 className="text-xl font-bold text-blue-700">
                 When You Need a Bridge:
               </h3>
-              <ul className="space-y-2">
+              <ul className="space-y-2 text-blue-500">
                 <li className="flex items-start gap-2">
                   <CheckCircle2 className="w-5 h-5 text-blue-600 flex-shrink-0 mt-1" />
                   <span>To replace one or more missing teeth</span>
@@ -145,7 +145,7 @@ export default function CrownAndBridgesPage() {
           step={1}
           title="Consultation & Examination"
           description="We'll examine your teeth, take X-rays, and discuss your treatment options. We'll determine if a crown or bridge is the best solution for your specific dental needs."
-          image="/images/treatments/crown-bridge/consultation.jpg"
+          image="/images/treatments/crown-and-bridges/consultation.jpg"
           imageAlt="Dental crown and bridge consultation"
         />
 
@@ -153,7 +153,7 @@ export default function CrownAndBridgesPage() {
           step={2}
           title="Tooth Preparation"
           description="We'll prepare the affected tooth/teeth by removing a small amount of the outer surface to make room for the crown or bridge. For bridges, the adjacent teeth that will support the bridge are prepared."
-          image="/images/treatments/crown-bridge/preparation.jpg"
+          image="/images/treatments/crown-and-bridges/preparation.jpg"
           imageAlt="Tooth preparation for crown or bridge"
           isReversed
         />
@@ -162,7 +162,7 @@ export default function CrownAndBridgesPage() {
           step={3}
           title="Impressions & Temporary Restoration"
           description="We'll take precise impressions of your prepared teeth to create your custom crown or bridge. A temporary crown/bridge will be placed to protect your teeth while the permanent restoration is being made."
-          image="/images/treatments/crown-bridge/impressions.jpg"
+          image="/images/treatments/crown-and-bridges/temporary.jpg"
           imageAlt="Taking dental impressions for crown or bridge"
         />
 
@@ -170,7 +170,7 @@ export default function CrownAndBridgesPage() {
           step={4}
           title="Fabrication"
           description="Our dental laboratory will craft your custom crown or bridge using high-quality materials. We'll select the appropriate shade to match your natural teeth for a seamless appearance."
-          image="/images/treatments/crown-bridge/fabrication.jpg"
+          image="/images/treatments/crown-and-bridges/placement.jpg"
           imageAlt="Crown and bridge fabrication"
           isReversed
         />
@@ -179,7 +179,7 @@ export default function CrownAndBridgesPage() {
           step={5}
           title="Placement & Adjustment"
           description="Once your permanent crown or bridge is ready, we'll remove the temporary restoration and place the new one. We'll check the fit, make any necessary adjustments, and ensure your bite is comfortable."
-          image="/images/treatments/crown-bridge/placement.jpg"
+          image="/images/treatments/crown-and-bridges/placement.jpg"
           imageAlt="Crown and bridge placement"
         />
       </div>

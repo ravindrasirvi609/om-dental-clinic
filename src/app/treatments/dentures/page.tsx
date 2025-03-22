@@ -58,7 +58,7 @@ export default function DenturesPage() {
               Replace all teeth in the upper or lower jaw. These are custom-made
               to fit comfortably and look natural, restoring your full smile.
             </p>
-            <ul className="space-y-2">
+            <ul className="space-y-2 text-blue-500">
               <li className="flex items-start gap-2">
                 <CheckCircle2 className="w-5 h-5 text-blue-600 flex-shrink-0 mt-1" />
                 <span>Full arch replacement</span>
@@ -81,7 +81,7 @@ export default function DenturesPage() {
               Replace multiple missing teeth while preserving your healthy
               natural teeth. These attach to your existing teeth for stability.
             </p>
-            <ul className="space-y-2">
+            <ul className="space-y-2 text-blue-500">
               <li className="flex items-start gap-2">
                 <CheckCircle2 className="w-5 h-5 text-blue-600 flex-shrink-0 mt-1" />
                 <span>Preserve natural teeth</span>
@@ -104,7 +104,7 @@ export default function DenturesPage() {
               Placed immediately after tooth extraction, ensuring you never have
               to go without teeth during the healing process.
             </p>
-            <ul className="space-y-2">
+            <ul className="space-y-2 text-blue-500">
               <li className="flex items-start gap-2">
                 <CheckCircle2 className="w-5 h-5 text-blue-600 flex-shrink-0 mt-1" />
                 <span>No waiting period</span>
@@ -127,7 +127,7 @@ export default function DenturesPage() {
               Secured by dental implants for maximum stability and comfort.
               These prevent bone loss and provide a more natural feel.
             </p>
-            <ul className="space-y-2">
+            <ul className="space-y-2 text-blue-500">
               <li className="flex items-start gap-2">
                 <CheckCircle2 className="w-5 h-5 text-blue-600 flex-shrink-0 mt-1" />
                 <span>Superior stability</span>
@@ -185,7 +185,7 @@ export default function DenturesPage() {
           step={5}
           title="Follow-up Care"
           description="We'll schedule follow-up appointments to address any concerns and make additional adjustments if needed. We'll also provide detailed instructions on caring for your dentures to ensure their longevity."
-          image="/images/treatments/dentures/follow-up.jpg"
+          image="/images/treatments/dentures/consultation.jpg"
           imageAlt="Denture follow-up care"
         />
       </div>

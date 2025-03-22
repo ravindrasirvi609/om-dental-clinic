@@ -80,7 +80,7 @@ export default function RootCanalPage() {
           step={5}
           title="Crown Placement"
           description="In a follow-up appointment, we'll place a permanent crown to protect and strengthen your treated tooth, restoring its full function and appearance."
-          image="/images/treatments/root-canal/crown.jpg"
+          image="/images/treatments/root-canal/diagnosis.jpg"
           imageAlt="Crown placement after root canal"
         />
       </div>

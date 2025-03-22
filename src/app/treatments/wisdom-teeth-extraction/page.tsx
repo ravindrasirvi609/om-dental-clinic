@@ -117,7 +117,7 @@ export default function WisdomTeethExtractionPage() {
           step={5}
           title="Recovery & Follow-up"
           description="We'll schedule a follow-up appointment to monitor your healing progress and remove any stitches if necessary. Complete recovery typically takes 1-2 weeks, with most patients returning to normal activities within a few days."
-          image="/images/treatments/wisdom-teeth/recovery.jpg"
+          image="/images/treatments/wisdom-teeth/examination.jpg"
           imageAlt="Recovery and follow-up care"
         />
       </div>
@@ -158,7 +158,7 @@ export default function WisdomTeethExtractionPage() {
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
           <div className="space-y-4">
             <h3 className="text-xl font-bold text-blue-700">First 24 Hours</h3>
-            <ul className="space-y-2">
+            <ul className="space-y-2 text-blue-500">
               <li className="flex items-start gap-2">
                 <CheckCircle2 className="w-5 h-5 text-blue-600 flex-shrink-0 mt-1" />
                 <span>
@@ -182,7 +182,7 @@ export default function WisdomTeethExtractionPage() {
           </div>
           <div className="space-y-4">
             <h3 className="text-xl font-bold text-blue-700">First Week</h3>
-            <ul className="space-y-2">
+            <ul className="space-y-2 text-blue-500">
               <li className="flex items-start gap-2">
                 <CheckCircle2 className="w-5 h-5 text-blue-600 flex-shrink-0 mt-1" />
                 <span>Eat soft foods like yogurt, pudding, and soup</span>

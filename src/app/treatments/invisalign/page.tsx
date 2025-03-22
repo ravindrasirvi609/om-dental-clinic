@@ -79,7 +79,7 @@ export default function InvisalignPage() {
           step={5}
           title="Final Results"
           description="Once you've completed your series of aligners, we'll evaluate your results. You'll receive a retainer to maintain your new smile and prevent teeth from shifting back."
-          image="/images/treatments/invisalign/final-results.jpg"
+          image="/images/treatments/invisalign/treatment-plan.jpg"
           imageAlt="Final results after Invisalign treatment"
         />
       </div>
