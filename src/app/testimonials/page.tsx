@@ -2,6 +2,7 @@
 import React from "react";
 import { motion } from "framer-motion";
 import { Star, Quote, ThumbsUp, MessageCircle } from "lucide-react";
+import Image from "next/image";
 
 interface Rating {
   overall: number;
@@ -157,14 +158,23 @@ const TestimonialCard: React.FC<{ testimonial: Testimonial }> = ({
         </div>
         <div className="flex-1">
           <div className="flex items-center justify-between">
-            <h3 className="text-lg font-semibold text-blue-800">
-              {testimonial.name}
-              {testimonial.verified && (
-                <span className="ml-2 text-xs bg-green-100 text-green-600 px-2 py-1 rounded-full">
-                  Verified Patient
-                </span>
-              )}
-            </h3>
+            <div className="flex items-center">
+              <h3 className="text-lg font-semibold text-blue-800">
+                {testimonial.name}
+                {testimonial.verified && (
+                  <span className="ml-2 text-xs bg-green-100 text-green-600 px-2 py-1 rounded-full">
+                    Verified Patient
+                  </span>
+                )}
+              </h3>
+              <Image
+                src="/images/google-g-logo.png"
+                alt="Google Review"
+                width={18}
+                height={18}
+                className="ml-2"
+              />
+            </div>
             <span className="text-sm text-blue-600">{testimonial.date}</span>
           </div>
           <p className="text-sm text-blue-600">{testimonial.location}</p>
@@ -216,6 +226,24 @@ const TestimonialsPage: React.FC = () => {
             Read what our patients say about their experience at Om Dental
             Clinic
           </p>
+          <div className="flex items-center justify-center mt-4">
+            <Image
+              src="/images/google-review.png"
+              alt="Google Reviews"
+              width={30}
+              height={30}
+              className="mr-2"
+            />
+            <div className="text-2xl font-bold text-blue-800 mr-2">4.9</div>
+            <div className="flex">
+              {[1, 2, 3, 4, 5].map((star) => (
+                <Star
+                  key={star}
+                  className="w-5 h-5 text-yellow-400 fill-yellow-400"
+                />
+              ))}
+            </div>
+          </div>
         </div>
 
         {/* Stats Section */}

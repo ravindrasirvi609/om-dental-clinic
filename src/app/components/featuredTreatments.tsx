@@ -7,23 +7,6 @@ import { ArrowRight } from "lucide-react";
 
 const treatments = [
   {
-    id: "invisalign",
-    title: "Invisalign",
-    description: "Clear aligners for a straighter smile without metal braces.",
-    image: "/images/treatments/invisalign/invisalign-main.jpg",
-    link: "/treatments/invisalign",
-    color: "from-blue-500 to-blue-600",
-  },
-  {
-    id: "dental-implant",
-    title: "Dental Implants",
-    description:
-      "Permanent tooth replacement that looks and functions naturally.",
-    image: "/images/treatments/dental-implant/implant-main.jpg",
-    link: "/treatments/dental-implant",
-    color: "from-blue-600 to-blue-700",
-  },
-  {
     id: "root-canal",
     title: "Root Canal",
     description:
@@ -33,12 +16,31 @@ const treatments = [
     color: "from-blue-700 to-blue-800",
   },
   {
+    id: "dental-implant",
+    title: "Dental Implants",
+    description:
+      "Permanent tooth replacement that looks and functions naturally.",
+    image: "/images/treatments/dental-implant/implant-main.webp",
+    link: "/treatments/dental-implant",
+    color: "from-blue-600 to-blue-700",
+  },
+
+  {
     id: "crown-bridges",
     title: "Crown & Bridges",
     description:
       "Restore damaged teeth and replace missing teeth with custom solutions.",
     image: "/images/treatments/crown-and-bridges/crown-bridge-main.jpg",
     link: "/treatments/crown-and-bridges",
+    color: "from-blue-500 to-blue-600",
+  },
+
+  {
+    id: "invisalign",
+    title: "Invisalign",
+    description: "Clear aligners for a straighter smile without metal braces.",
+    image: "/images/treatments/invisalign/invisalign-main.jpg",
+    link: "/treatments/invisalign",
     color: "from-blue-500 to-blue-600",
   },
 ];
@@ -131,8 +133,8 @@ const FeaturedTreatments = () => {
                 specific needs, ensuring the best possible outcomes for your
                 oral health.
               </p>
-              <ul className="space-y-2">
-                <li className="flex items-start gap-2">
+              <ul className="space-y-2 text-blue-500">
+                <li className="flex items-start  gap-2">
                   <div className="w-5 h-5 rounded-full bg-blue-600 flex-shrink-0 mt-1"></div>
                   <span>Comprehensive initial assessment</span>
                 </li>

@@ -1,8 +1,7 @@
 "use client";
-import React, { useEffect, useRef } from "react";
-import { gsap } from "gsap";
-import { ScrollTrigger } from "gsap/ScrollTrigger";
+import React from "react";
 import Link from "next/link";
+import Image from "next/image";
 
 interface Testimonial {
   initial: string;
@@ -11,10 +10,6 @@ interface Testimonial {
 }
 
 const Testimonial: React.FC = () => {
-  const sliderRef = useRef<HTMLDivElement>(null);
-  const cardsRef = useRef<HTMLDivElement[]>([]);
-  const sectionRef = useRef<HTMLElement>(null);
-
   const testimonials: Testimonial[] = [
     {
       initial: "VG",
@@ -48,70 +43,32 @@ const Testimonial: React.FC = () => {
     },
   ];
 
-  const addToCardsRef = (el: HTMLDivElement | null) => {
-    if (el && !cardsRef.current.includes(el)) cardsRef.current.push(el);
-  };
-
-  useEffect(() => {
-    gsap.registerPlugin(ScrollTrigger);
-    if (sliderRef.current) {
-      gsap.to(sliderRef.current, {
-        x: () => -(sliderRef.current!.scrollWidth - window.innerWidth + 32),
-        ease: "none",
-        duration: 20,
-        repeat: -1,
-        yoyo: true,
-        repeatDelay: 1,
-      });
-    }
-    if (cardsRef.current.length > 0 && sectionRef.current) {
-      gsap.fromTo(
-        cardsRef.current,
-        { opacity: 0, y: 20 },
-        {
-          opacity: 1,
-          y: 0,
-          duration: 0.6,
-          stagger: 0.1,
-          scrollTrigger: {
-            trigger: sectionRef.current,
-            start: "top 80%",
-            once: true,
-          },
-        }
-      );
-    }
-  }, []);
-
   return (
-    <section
-      ref={sectionRef}
-      className="py-20 bg-gradient-to-r from-blue-50 to-blue-100"
-    >
+    <section className="py-20 bg-gradient-to-r from-blue-50 to-blue-100">
       <div className="container mx-auto px-4">
-        <h2 className="text-2xl md:text-3xl font-bold text-blue-900 text-center mb-12">
-          What Our Patients Say
-        </h2>
-        <div
-          ref={sliderRef}
-          className="flex space-x-6 py-4 px-2"
-          style={{ width: "fit-content" }}
-        >
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
           {testimonials.map((testimonial, index) => (
             <div
               key={index}
-              ref={addToCardsRef}
-              className="backdrop-blur-md bg-white/40 border border-white/30 rounded-2xl p-6 shadow-lg flex-shrink-0"
-              style={{ width: "320px" }}
+              className="backdrop-blur-md bg-white/40 border border-white/30 rounded-2xl p-6 shadow-lg hover:shadow-xl transition-all duration-300 transform hover:-translate-y-1"
             >
               <div className="flex items-center mb-4">
                 <div className="w-12 h-12 rounded-full bg-blue-200 flex items-center justify-center mr-3 text-blue-800 font-bold">
                   {testimonial.initial}
                 </div>
-                <div>
-                  <h3 className="font-semibold text-blue-900">
-                    {testimonial.name}
-                  </h3>
+                <div className="flex-grow">
+                  <div className="flex justify-between items-center">
+                    <h3 className="font-semibold text-blue-900">
+                      {testimonial.name}
+                    </h3>
+                    <Image
+                      src="/images/google-g-logo.png"
+                      alt="Google Review"
+                      width={18}
+                      height={18}
+                      className="ml-2"
+                    />
+                  </div>
                   <div className="flex">
                     {[1, 2, 3, 4, 5].map((star) => (
                       <svg
@@ -132,10 +89,11 @@ const Testimonial: React.FC = () => {
             </div>
           ))}
         </div>
-        <div className="text-center mt-8">
+
+        <div className="text-center mt-12">
           <Link
             href="/testimonials"
-            className="px-6 py-2 bg-blue-600 hover:bg-blue-700 text-white rounded-full transition duration-300"
+            className="px-6 py-3 bg-blue-600 hover:bg-blue-700 text-white rounded-full transition duration-300"
           >
             See More Reviews
           </Link>
