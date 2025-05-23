@@ -57,7 +57,7 @@ const AboutUs = () => {
               ref={heroButtonRef}
               className="px-6 py-3 bg-blue-600 text-white rounded-full hover:bg-blue-700 transition duration-300 text-lg"
             >
-              Meet Dr. Choudhary
+              Meet Dr. Mahendra Kumar
             </button>
           </div>
         </div>
@@ -72,11 +72,14 @@ const AboutUs = () => {
                 Our Story
               </h2>
               <p className="text-blue-800 text-lg">
-                Founded in 2010 by Dr. Mahendra Choudhary, Om Dental Clinic
-                emerged with a mission to deliver top-tier dental care in a
-                warm, welcoming setting. With over a decade of service, we’ve
-                become a trusted name, treating thousands with a focus on
-                excellence and patient happiness.
+                Founded in 2010 by Dr. Mahendra Kumar, Om Dental Clinic emerged
+                with a mission to deliver top-tier dental care in a warm,
+                welcoming setting. With over a decade of service, we&apos;ve
+                become a trusted name in the community, treating thousands of
+                patients with a focus on excellence, innovation, and patient
+                comfort. Our state-of-the-art facility combines modern
+                technology with compassionate care to ensure every visit is a
+                positive experience.
               </p>
             </div>
             <div>
@@ -147,7 +150,7 @@ const AboutUs = () => {
               <div className="w-48 h-48 rounded-full overflow-hidden flex-shrink-0">
                 <Image
                   src="/dr-choudhary.jpg"
-                  alt="Dr. Mahendra Choudhary"
+                  alt="Dr. Mahendra Kumar"
                   width={192}
                   height={192}
                   className="w-full h-full object-cover"
@@ -155,21 +158,24 @@ const AboutUs = () => {
               </div>
               <div>
                 <h2 className="text-3xl md:text-4xl font-bold text-blue-900 mb-2">
-                  Dr. Mahendra Choudhary
+                  Dr. Mahendra Kumar
                 </h2>
                 <p className="text-xl text-blue-800 mb-4">
                   Founder & Chief Dentist
                 </p>
                 <p className="text-blue-800 text-lg mb-4">
-                  With over 10 years of experience, Dr. Mahendra Choudhary
-                  brings expertise and compassion to every patient. A graduate
-                  of [University Name], he specializes in [specializations] and
-                  is committed to advancing dental care through the latest
-                  techniques.
+                  With over 15 years of experience, Dr. Mahendra Kumar brings
+                  exceptional expertise and compassion to every patient. A
+                  graduate of Rajasthan Dental College, he specializes in
+                  Cosmetic Dentistry and Implantology and is committed to
+                  advancing dental care through continuous education and
+                  adopting the latest techniques. Dr. Kumar regularly attends
+                  international dental conferences to stay at the forefront of
+                  dental innovation.
                 </p>
                 <p className="text-blue-800 italic text-lg">
                   &quot;A healthy smile changes lives, and at Om Dental Clinic,
-                  we’re here to make that happen for you.&quot;
+                  we&apos;re here to make that happen for you.&quot;
                 </p>
               </div>
             </div>
@@ -259,6 +265,84 @@ const AboutUs = () => {
               </h3>
               <p className="text-blue-800">
                 Implants, extractions, and advanced procedures.
+              </p>
+            </div>
+          </div>
+          <div className="mt-12 text-center">
+            <p className="text-blue-800 text-lg mb-6">
+              At Om Dental Clinic, we believe in providing comprehensive dental
+              care under one roof. Our team is dedicated to creating
+              personalized treatment plans that address your unique needs.
+            </p>
+            <a
+              href="/services"
+              className="px-6 py-3 bg-blue-600 text-white rounded-full hover:bg-blue-700 transition duration-300 text-lg inline-block"
+            >
+              View All Services
+            </a>
+          </div>
+        </div>
+      </section>
+
+      {/* Our Philosophy Section */}
+      <section className="py-16 bg-gradient-to-b from-blue-50 to-transparent">
+        <div className="container mx-auto px-4">
+          <h2 className="text-3xl md:text-4xl font-bold text-blue-900 text-center mb-4">
+            Our Philosophy
+          </h2>
+          <p className="text-blue-800 text-lg text-center max-w-2xl mx-auto mb-12">
+            Guiding principles that shape our commitment to exceptional dental
+            care
+          </p>
+          <div className="backdrop-blur-md bg-white/30 p-8 rounded-2xl border border-white/20 shadow-lg hover:shadow-xl transition-shadow duration-300">
+            <p className="text-blue-800 text-lg mb-12 text-center max-w-3xl mx-auto">
+              At Om Dental Clinic, we believe that optimal dental health is
+              essential to overall well-being. Our philosophy centers around
+              three core principles:
+            </p>
+            <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-12">
+              <div className="text-center group hover:transform hover:scale-105 transition-all duration-300">
+                <div className="bg-blue-50 p-6 rounded-full w-20 h-20 mx-auto mb-4 flex items-center justify-center group-hover:bg-blue-100 transition-colors duration-300">
+                  <Shield className="w-10 h-10 text-blue-600" />
+                </div>
+                <h3 className="text-xl font-semibold text-blue-900 mb-3 group-hover:text-blue-700 transition-colors duration-300">
+                  Prevention First
+                </h3>
+                <p className="text-blue-800">
+                  We emphasize preventive care to help you maintain a healthy
+                  smile for life.
+                </p>
+              </div>
+              <div className="text-center group hover:transform hover:scale-105 transition-all duration-300">
+                <div className="bg-blue-50 p-6 rounded-full w-20 h-20 mx-auto mb-4 flex items-center justify-center group-hover:bg-blue-100 transition-colors duration-300">
+                  <Heart className="w-10 h-10 text-blue-600" />
+                </div>
+                <h3 className="text-xl font-semibold text-blue-900 mb-3 group-hover:text-blue-700 transition-colors duration-300">
+                  Personalized Approach
+                </h3>
+                <p className="text-blue-800">
+                  We recognize that each patient is unique and tailor our
+                  treatments accordingly.
+                </p>
+              </div>
+              <div className="text-center group hover:transform hover:scale-105 transition-all duration-300">
+                <div className="bg-blue-50 p-6 rounded-full w-20 h-20 mx-auto mb-4 flex items-center justify-center group-hover:bg-blue-100 transition-colors duration-300">
+                  <Smile className="w-10 h-10 text-blue-600" />
+                </div>
+                <h3 className="text-xl font-semibold text-blue-900 mb-3 group-hover:text-blue-700 transition-colors duration-300">
+                  Painless Dentistry
+                </h3>
+                <p className="text-blue-800">
+                  We utilize advanced techniques to ensure comfortable,
+                  stress-free treatments.
+                </p>
+              </div>
+            </div>
+            <div className="bg-blue-50/50 p-6 rounded-xl border border-blue-100">
+              <p className="text-blue-800 text-lg text-center italic">
+                &ldquo;Our commitment to these principles has earned us the
+                trust and loyalty of our patients, many of whom have been with
+                us since we opened our doors.&rdquo;
               </p>
             </div>
           </div>
