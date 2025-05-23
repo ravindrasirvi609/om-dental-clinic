@@ -149,7 +149,7 @@ const AboutUs = () => {
             <div className="flex flex-col md:flex-row items-center gap-8">
               <div className="w-48 h-48 rounded-full overflow-hidden flex-shrink-0">
                 <Image
-                  src="/dr-choudhary.jpg"
+                  src="/mKumar.jpeg"
                   alt="Dr. Mahendra Kumar"
                   width={192}
                   height={192}
