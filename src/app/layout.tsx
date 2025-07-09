@@ -186,12 +186,11 @@ export default function RootLayout({
         />
         <link rel="preconnect" href="https://www.google-analytics.com" />
         <link rel="dns-prefetch" href="https://www.google-analytics.com" />
-
-        <Schema />
       </head>
       <body
         className={`${inter.variable} ${montserrat.variable} antialiased flex flex-col min-h-screen bg-gradient-to-br from-blue-50 to-blue-100 font-sans`}
       >
+        <Schema />
         <Header />
         <main className="flex-grow">{children}</main>
         <Footer />

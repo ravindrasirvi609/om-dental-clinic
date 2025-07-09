@@ -14,8 +14,10 @@ import { MapPin, Phone, Clock } from "lucide-react";
 import Link from "next/link";
 
 export const metadata: Metadata = {
-  title: "Om Dental Clinic | Best Dental Care in Hinjewadi, Pune | Top Dentist Near Me",
-  description: "Om Dental Clinic is the premier dental care provider in Hinjewadi, Pune. Our expert dentists offer comprehensive dental services including root canal treatment, dental implants, teeth whitening, orthodontics, and emergency dental care. Modern technology, comfortable environment, and affordable prices. Book your appointment today for world-class dental treatment in Hinjewadi Phase 1, Pune.",
+  title:
+    "Om Dental Clinic | Best Dental Care in Hinjewadi, Pune | Top Dentist Near Me",
+  description:
+    "Om Dental Clinic is the premier dental care provider in Hinjewadi, Pune. Our expert dentists offer comprehensive dental services including root canal treatment, dental implants, teeth whitening, orthodontics, and emergency dental care. Modern technology, comfortable environment, and affordable prices. Book your appointment today for world-class dental treatment in Hinjewadi Phase 1, Pune.",
   keywords: [
     "best dental clinic in hinjewadi",
     "top dentist in pune",
