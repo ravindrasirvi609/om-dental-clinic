@@ -9,20 +9,33 @@ import { generateMetadata } from "./components/SEO";
 import FeaturedTreatments from "./components/featuredTreatments";
 import Gallery from "./components/gallery";
 import Statistics from "./components/statistics";
+import FAQ from "./components/FAQ";
+import LocalBusinessInfo from "./components/LocalBusinessInfo";
 import { MapPin, Phone, Clock } from "lucide-react";
 import Link from "next/link";
 
 export const metadata: Metadata = generateMetadata({
-  title: "Om Dental Clinic | Best Dental Care in Hinjawadi, Pune",
+  title:
+    "Om Dental Clinic | Best Dental Care in Hinjewadi, Pune | Top Dentist Near Me",
   description:
-    "Om Dental Clinic provides expert dental care in Hinjawadi, Pune. Our experienced dentists offer comprehensive dental services using modern technology in a comfortable environment.",
+    "Om Dental Clinic is the premier dental care provider in Hinjewadi, Pune. Our expert dentists offer comprehensive dental services including root canal treatment, dental implants, teeth whitening, orthodontics, and emergency dental care. Modern technology, comfortable environment, and affordable prices. Book your appointment today for world-class dental treatment in Hinjewadi Phase 1, Pune.",
   keywords: [
-    "best dental clinic in Hinjawadi",
-    "top dentist in Pune",
-    "affordable dental care",
-    "family dentistry",
-    "modern dental clinic",
-    "dental consultation",
+    "best dental clinic in hinjewadi",
+    "top dentist in pune",
+    "dental clinic near me hinjewadi",
+    "affordable dental care pune",
+    "family dentistry hinjewadi",
+    "modern dental clinic pune",
+    "dental consultation hinjewadi",
+    "emergency dentist pune",
+    "cosmetic dentistry hinjewadi",
+    "root canal specialist pune",
+    "dental implant clinic hinjewadi",
+    "teeth whitening pune",
+    "orthodontist hinjewadi",
+    "pediatric dentist pune",
+    "dental crown hinjewadi",
+    "wisdom tooth removal pune",
   ],
 });
 
@@ -49,6 +62,12 @@ export default function Home() {
 
       {/* Testimonials Section */}
       <Testimonial />
+
+      {/* FAQ Section */}
+      <FAQ />
+
+      {/* Local Business Info Section */}
+      <LocalBusinessInfo />
 
       {/* Location Map Section */}
       <section className="py-16 bg-gradient-to-t from-blue-50 to-white">
