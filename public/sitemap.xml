@@ -2,4 +2,6 @@
 <sitemapindex xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 <sitemap><loc>https://omdental.clinic/sitemap-0.xml</loc></sitemap>
 <sitemap><loc>https://omdental.clinic/server-sitemap.xml</loc></sitemap>
+<sitemap><loc>https://omdental.clinic/sitemap-treatments.xml</loc></sitemap>
+<sitemap><loc>https://omdental.clinic/sitemap-services.xml</loc></sitemap>
 </sitemapindex>

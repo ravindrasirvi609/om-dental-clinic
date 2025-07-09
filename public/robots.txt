@@ -5,6 +5,10 @@ Disallow: /api
 Disallow: /admin
 Disallow: /_next
 Disallow: /static
+Disallow: /private
+Disallow: /*.json$
+Disallow: /404
+Disallow: /500
 
 # Host
 Host: https://omdental.clinic
@@ -12,3 +16,5 @@ Host: https://omdental.clinic
 # Sitemaps
 Sitemap: https://omdental.clinic/sitemap.xml
 Sitemap: https://omdental.clinic/server-sitemap.xml
+Sitemap: https://omdental.clinic/sitemap-treatments.xml
+Sitemap: https://omdental.clinic/sitemap-services.xml
